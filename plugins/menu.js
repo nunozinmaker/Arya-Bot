@@ -32,85 +32,63 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
       .replace(/%week/g, week)
       .replace(/%date/g, date)
       .replace(/%time/g, time): `
-🤖 [NFQ BOT] 🤖
-Created Bye: @Drawl Nag
+🤖 [NUNO BOT] 🤖
+By: @nuno.apenass
 
 Hi, ${name} 👋
-Exp: ${exp}
+Experiência: ${exp}
 
-📟 Waktu: ${time}
-📆 Tanggal: ${week}, ${date}
+📟 Tempo: ${time}
+📆 Data: ${week}, ${date}
 
 ${more.repeat(1000)}
 
-Cara Tambah XP:
-+1 Exp/pesan biasa
-+10 Exp/command
+Como adicionar xp:
++1 Exp/mensagem normal
++10 Exp/comandos
 
 ╠═════✪〘 Menu 〙✪═══
 ║
 ╠═〘 Xp 〙 ═
-╠➥ ${_p}leaderboard [jumlah user]
+╠➥ ${_p}Entre os melhores [jumlah user]
 ║
-╠═〘 Command 〙 ═
+╠═〘 Comandos 〙 ═
 ╠➥ ${_p}menu
 ╠➥ ${_p}help
 ╠➥ ${_p}?
 ║
-╠═〘 Tutor BoT 〙 ═
-╠➥ ${_p}tutorial
+╠═〘 Outros 〙 ═
+╠➥ ${_p}qr <texto>
+╠➥ ${_p}sticker <marca a foto>
+╠➥ ${_p}toimg (marca a figurinha)
 ║
-╠═〘 Others 〙 ═
-╠➥ ${_p}qr <teks>
-╠➥ ${_p}stiker (caption)
-╠➥ ${_p}stiker <url>
-╠➥ ${_p}toimg (reply)
-╠➥ ${_p}bucin
-╠➥ ${_p}ssweb <url>
-╠➥ ${_p}sswebf <url>
-╠➥ ${_p}google <pencarian>
-╠➥ ${_p}googlef <pencarian>
-╠➥ ${_p}readmore <teks>|<sembunyi>
-╠➥ ${_p}quran
-╠➥ ${_p}modApk
-║
-╠═〘 Group 〙 ═
+╠═〘 Grupos 〙 ═
 ╠➥ ${_p} add [62xxxxxxxxx]
 ╠➥ ${_p} promote [@tagmember]
 ╠➥ ${_p} demote [@tagadmin]
-╠➥ ${_p} linkgrup
-╠➥ ${_p} pengumuman [text]
-╠➥ ${_p} hidetag [text]
+╠➥ ${_p} linkgroup
 ╠➥ ${_p} listonline
 ╠➥ ${_p} kick @Member
 ╠➥ ${_p} grouplist
 ║
-╠═〘 EXPERIMENTAL 〙 ═
-╠➥ ${_p}jadibot [kode login jika ada / kosongin]
-╠➥ ${_p}berhenti
-╠➥ ${_p}getcode
-║
-╠═〘 OWNER 〙 ═
-╠➥ ${_p}bcgc <teks>
-╠➥ ${_p}setmenu <teks>
+╠═〘 Dono 〙 ═
 ╠➥ ${_p}deletechat (chat grup)
 ╠➥ ${_p}deletechat group
 ╠➥ ${_p}mutechat (chat grup)
 ╠➥ ${_p}mutechat group
 ║
-╠═〘 IKLAN 〙 ═
-╠➥ Instagram: @arpunchs
-╠➥ Github: https://github.com/Arya274/Arya-Bot
+╠═〘 PROPAGANDA 〙 ═
+╠➥ Instagram: @nuno.apenass
 ║
 ╠═〘 Info Bot 〙 ═
-╠➥ Name : NFQ BOT
-╠➥ Coded using *Nano* on Android \\w Termux
-╠➥ Request? Wa.me/6288235435804
+╠➥ Name : Nuno Bot
+╠➥ Feito no termux
+╠➥ Dúvidas? HTTPS://WA.me/553398445380
 ╠═════
 ║ Advanced:
 ║  > return m
 ║
-╠═〘 NfQ BOT 〙═
+╠═〘 NUNO BOT 〙═
 `.trim()
     conn.reply(m.chat, {...preview, text}, m)
   }
